@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-main: #0B0F14;
+    --card-bg: #111827;
+    --text-primary: #E5E7EB;
+    --text-secondary: #9CA3AF;
+    --accent-gold: #D4AF37;
+    --font-heading: 'Syncopate', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: crosshair;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+}
+
+/* Texture Overlay */
+.noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://grainy-gradients.vercel.app/noise.svg');
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Layout Wrapper */
+.main-wrapper {
+    margin-left: 80px;
+}
+
+@media (max-width: 992px) {
+    .main-wrapper {
+        margin-left: 0;
+        padding-top: 80px;
+        overflow-x: hidden;
+    }
+}
+
+/* Utilities */
+.outline-text {
+    -webkit-text-stroke: 1px var(--text-primary);
+    color: transparent;
+}
+
+.gold-text {
+    color: var(--accent-gold);
+}
+
+/* Common Layout Patterns */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
