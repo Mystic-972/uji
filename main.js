@@ -1,4 +1,3 @@
-// Character Data (Core Officials)
 const characters = [
     { name: "Afif", role: "THE CHAIRMAN", str: "0.85", int: "0.90" },
     { name: "Andhika", role: "THE GUARDIAN", str: "0.90", int: "0.75" },
@@ -90,7 +89,7 @@ function renderLegacyCards() {
     });
 }
 
-// Parallax Effect for Image
+// Parallax Effect Image
 function setupParallax() {
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
@@ -175,3 +174,4 @@ document.addEventListener('DOMContentLoaded', () => {
     renderHomework();
     setupParallax();
 });
+
