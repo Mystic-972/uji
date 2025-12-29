@@ -1,4 +1,3 @@
-/* Hero Section (Asymmetrical Brutalism) */
 .hero-brutal {
     min-height: 100vh;
     display: grid;
@@ -513,4 +512,5 @@
     .hero-left {
         padding-right: 0;
     }
+
 }
