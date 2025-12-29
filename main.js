@@ -55,10 +55,10 @@ const homeworkData = [
         description: "Upload makalah & ppt ke Google Drive"
     },
     {
-        subject: "Algoritma",
-        title: "Flowchart Login",
-        deadline: "2026-12-25",
-        description: "Buat flowchart logika login sistem perpustakaan."
+        subject: "Pemrograman",
+        title: "Makalah Projek Kelompok",
+        deadline: "2026-01-06",
+        description: "Pengumpulan Makalah Projek Kelompok."
     }
 ];
 
@@ -174,4 +174,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderHomework();
     setupParallax();
 });
+
 
