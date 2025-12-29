@@ -52,7 +52,6 @@ body {
     }
 }
 
-/* Utilities */
 .outline-text {
     -webkit-text-stroke: 1px var(--text-primary);
     color: transparent;
@@ -62,9 +61,9 @@ body {
     color: var(--accent-gold);
 }
 
-/* Common Layout Patterns */
 .grid-layout {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
+
 }
