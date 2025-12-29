@@ -1,3 +1,4 @@
+/* Hero Section (Asymmetrical Brutalism) */
 .hero-brutal {
     min-height: 100vh;
     display: grid;
@@ -106,6 +107,7 @@
     margin-bottom: 10px;
 }
 
+/* Marquee */
 .marquee-container {
     background: var(--accent-gold);
     color: #000;
@@ -138,6 +140,7 @@
     }
 }
 
+/* Legacy Section (Custom Grid) */
 .legacy-section {
     padding: 100px 5%;
 }
@@ -166,7 +169,6 @@
     position: relative;
     transition: 0.4s;
     display: flex;
-    /* Ensure inner content can stretch if needed */
     flex-direction: column;
 }
 
@@ -233,7 +235,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1px;
-    /* Grid line effect */
     background: rgba(212, 175, 55, 0.1);
     border: 1px solid rgba(212, 175, 55, 0.1);
 }
@@ -278,7 +279,6 @@
     color: var(--text-primary);
 }
 
-/* Schedule Section (Brutalist Grid) */
 .schedule-section {
     padding: 100px 5%;
     border-top: 1px solid rgba(212, 175, 55, 0.1);
@@ -342,7 +342,6 @@
     color: var(--text-secondary);
 }
 
-/* Tasks Section */
 .tasks-section {
     padding: 100px 5%;
     border-top: 1px solid rgba(212, 175, 55, 0.1);
@@ -360,7 +359,6 @@
     opacity: 1;
 }
 
-/* Dedicated Gallery Entry Section */
 .gallery-entry {
     position: relative;
     padding: 150px 5%;
@@ -510,6 +508,36 @@
     .hero-left {
         padding-right: 0;
     }
-
 }
 
+.game-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-top: 1px dashed rgba(212, 175, 55, 0.3);
+    padding-top: 20px;
+}
+
+.skill-label {
+    display: block;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+    font-family: var(--font-heading);
+}
+
+.codename-val {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    letter-spacing: 1px;
+}
+
+.ultimate-val {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #fff;
+    opacity: 0.9;
+}
