@@ -106,7 +106,6 @@
     margin-bottom: 10px;
 }
 
-/* Marquee */
 .marquee-container {
     background: var(--accent-gold);
     color: #000;
@@ -139,7 +138,6 @@
     }
 }
 
-/* Legacy Section (Custom Grid) */
 .legacy-section {
     padding: 100px 5%;
 }
@@ -514,3 +512,4 @@
     }
 
 }
+
