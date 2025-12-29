@@ -1,8 +1,8 @@
 const characters = [
-    { name: "Afif", role: "THE CHAIRMAN", str: "0.85", int: "0.90" },
-    { name: "Andhika", role: "THE GUARDIAN", str: "0.90", int: "0.75" },
-    { name: "Syahla", role: "THE SCRIBE", str: "0.40", int: "0.98" },
-    { name: "Abdurrahman", role: "THE TREASURER", str: "0.70", int: "0.80" }
+    { name: "Afif", role: "CHIEF EXECUTIVE", codename: "ALPHA", ultimate: "Visionary Command" },
+    { name: "Aria", role: "VICE PRESIDENT", codename: "VANGUARD", ultimate: "Crisis Control" },
+    { name: "Syahla", role: "HEAD OF ADMIN", codename: "ORACLE", ultimate: "Master Plan" },
+    { name: "Farhan", role: "CHIEF OF FINANCE", codename: "THE VAULT", ultimate: "Asset Lock" }
 ];
 
 const subjectCoordinators = [
@@ -55,10 +55,10 @@ const homeworkData = [
         description: "Upload makalah & ppt ke Google Drive"
     },
     {
-        subject: "Pemrograman",
-        title: "Makalah Projek Kelompok",
-        deadline: "2026-01-06",
-        description: "Pengumpulan Makalah Projek Kelompok."
+        subject: "Algoritma",
+        title: "Flowchart Login",
+        deadline: "2026-12-25",
+        description: "Buat flowchart logika login sistem perpustakaan."
     }
 ];
 
@@ -74,14 +74,15 @@ function renderLegacyCards() {
             <span class="card-num">0${index + 1}</span>
             <div class="role-tag">${char.role}</div>
             <h3 class="card-title">${char.name}</h3>
-            <div class="stats-minimal">
-                <div class="stat-circ">
-                    <span class="stat-label">STR</span>
-                    <span class="stat-val">${char.str}</span>
+            
+            <div class="game-info">
+                <div class="codename-box">
+                    <span class="skill-label">CODENAME</span>
+                    <span class="codename-val">"${char.codename}"</span>
                 </div>
-                <div class="stat-circ">
-                    <span class="stat-label">INT</span>
-                    <span class="stat-val">${char.int}</span>
+                <div class="ultimate-box">
+                    <span class="skill-label">ULTIMATE SKILL</span>
+                    <span class="ultimate-val">${char.ultimate}</span>
                 </div>
             </div>
         `;
@@ -89,7 +90,7 @@ function renderLegacyCards() {
     });
 }
 
-// Parallax Effect Image
+// Parallax Effect 
 function setupParallax() {
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
@@ -174,5 +175,3 @@ document.addEventListener('DOMContentLoaded', () => {
     renderHomework();
     setupParallax();
 });
-
-
