@@ -1,8 +1,8 @@
 const characters = [
     { name: "Afif", role: "CHIEF EXECUTIVE", codename: "ALPHA", ultimate: "Visionary Command" },
-    { name: "Aria", role: "VICE PRESIDENT", codename: "VANGUARD", ultimate: "Crisis Control" },
+    { name: "Andhika", role: "VICE PRESIDENT", codename: "VANGUARD", ultimate: "Crisis Control" },
     { name: "Syahla", role: "HEAD OF ADMIN", codename: "ORACLE", ultimate: "Master Plan" },
-    { name: "Farhan", role: "CHIEF OF FINANCE", codename: "THE VAULT", ultimate: "Asset Lock" }
+    { name: "Abdurahman", role: "CHIEF OF FINANCE", codename: "THE VAULT", ultimate: "Asset Lock" }
 ];
 
 const subjectCoordinators = [
