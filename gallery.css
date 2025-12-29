@@ -112,7 +112,13 @@
     }
 
     .gallery-item,
-    .gallery-item:nth-child(even) {
+    .gallery-item:nth-child(even),
+    .gallery-item.wide {
         grid-column: span 12;
+        aspect-ratio: 1 / 1;
+    }
+
+    .gallery-item img {
+        object-fit: contain;
     }
 }
